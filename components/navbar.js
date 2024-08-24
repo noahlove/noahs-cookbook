@@ -13,17 +13,10 @@ import { myLoader } from "@/utils/all";
 export default function Navbar(props) {
   const leftmenu = [
     {
-      label: "Home",
-      href: "/"
-    },
-    {
       label: "About",
       href: "/about"
     },
-    {
-      label: "Contact",
-      href: "/contact"
-    }
+
   ];
 
   const rightmenu = [
@@ -31,17 +24,7 @@ export default function Navbar(props) {
       label: "Archive",
       href: "/archive"
     },
-    {
-      label: "Pro Version",
-      href: "https://stablo-pro.web3templates.com/",
-      external: true,
-      badge: "new"
-    },
-    {
-      label: "Download",
-      href: "https://web3templates.com/templates/stablo-minimal-blog-website-template",
-      external: true
-    }
+
   ];
 
   const mobilemenu = [...leftmenu, ...rightmenu];
@@ -52,7 +35,7 @@ export default function Navbar(props) {
         <Disclosure>
           {({ open }) => (
             <>
-              <div className="flex flex-wrap justify-between md:flex-nowrap md:gap-10">
+              <div className="flex flex-wrap justify-between md:flex-nowrap md:gap-20">
                 <div className="order-1 hidden w-full flex-col items-center justify-start md:order-none md:flex md:w-auto md:flex-1 md:flex-row md:justify-end">
                   {leftmenu.map((item, index) => (
                     <Fragment key={`${item.label}${index}`}>
