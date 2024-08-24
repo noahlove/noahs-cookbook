@@ -5,10 +5,8 @@ import { Menu, Transition, Disclosure } from "@headlessui/react";
 import Container from "@/components/container";
 import Link from "next/link";
 import Image from "next/image";
-import { urlForImage } from "@/lib/sanity/image";
 import cx from "clsx";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
-import { myLoader } from "@/utils/all";
 
 export default function Navbar(props) {
   const leftmenu = [
@@ -61,16 +59,16 @@ export default function Navbar(props) {
                     {props.logo ? (
                       <Image
                         src="/img/logo.svg"
-                        width={640}
-                        height={400}
+                        width={1000}
+                        height={800}
                         alt="Logo"
                         priority={true}
-                        sizes="(max-width: 640px) 100vw, 200px"
+                        sizes="(max-width: 800px) 100vw, 200px"
                         
                       />
                     ) : (
                       <span className="block text-center">
-                        Noah's Cookbook
+                        Noah&apos;s Cookbook
                       </span>
                     )}
                   </Link>
@@ -78,15 +76,15 @@ export default function Navbar(props) {
                     {props.logoalt ? (
                       <Image
                         src="/img/logo.svg"
-                        width={640}
-                        height={400}
+                        width={1000}
+                        height={800}
                         alt="Logo"
                         priority={true}
-                        sizes="(max-width: 640px) 100vw, 200px"
+                        sizes="(max-width: 800px) 100vw, 200px"
                       />
                     ) : (
                       <span className="block text-center">
-                        Noah's Cookbook
+                        Noah&apos;s Cookbook
                       </span>
                     )}
                   </Link>
